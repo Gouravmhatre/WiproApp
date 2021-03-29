@@ -1,0 +1,21 @@
+pipeline{
+      agent any
+      stages {
+            stage('init'){
+                   steps{
+                       echo "hii this is Gourav from TCS"
+                       echo "we are starting the tesing"
+                   }
+            }
+            stage('Build') {
+                    steps{
+                        echo "bbuilding sample maven project"
+                    }
+            }
+            stage('Deploy') {
+                    steps{
+                        echo "deploying in staging area"
+                    }
+            }
+      }
+}
